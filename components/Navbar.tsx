@@ -17,8 +17,8 @@ const Navbar: FC = () => {
   const location = useLocation();
 
   const isActive = (path: string) => {
-    return location.pathname === path 
-      ? 'text-forest-green font-bold border-b-2 border-forest-green' 
+    return location.pathname === path
+      ? 'text-forest-green font-bold border-b-2 border-forest-green'
       : 'text-gray-600 hover:text-forest-green transition-colors';
   };
 
@@ -29,7 +29,7 @@ const Navbar: FC = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2" onClick={closeMenu}>
             <div className="bg-forest-green p-1.5 rounded-lg">
-                <Leaf className="h-6 w-6 text-white" />
+              <Leaf className="h-6 w-6 text-white" />
             </div>
             <span className="font-serif font-bold text-xl text-gray-900 tracking-tight">
               Jeevan Utsav Kendra
@@ -48,10 +48,10 @@ const Navbar: FC = () => {
               </Link>
             ))}
             <a
-               href="https://docs.google.com/forms" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               className="bg-forest-green hover:bg-green-800 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
+              href="https://docs.google.com/forms"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-forest-green hover:bg-green-800 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
             >
               Give Suggestions
             </a>
@@ -80,18 +80,20 @@ const Navbar: FC = () => {
                 to={item.path}
                 onClick={closeMenu}
                 className={`block px-3 py-3 rounded-md text-base font-medium ${
-                   location.pathname === item.path ? 'bg-sand-beige text-forest-green' : 'text-gray-600'
+                  location.pathname === item.path
+                    ? 'bg-sand-beige text-forest-green'
+                    : 'text-gray-600'
                 }`}
               >
                 {item.label}
               </Link>
             ))}
-             <a
-               href="https://docs.google.com/forms" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               onClick={closeMenu}
-               className="block w-full text-center mt-4 bg-forest-green text-white px-3 py-3 rounded-md text-base font-medium"
+            <a
+              href="https://docs.google.com/forms"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={closeMenu}
+              className="block w-full text-center mt-4 bg-forest-green text-white px-3 py-3 rounded-md text-base font-medium"
             >
               Give Suggestions
             </a>

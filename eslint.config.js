@@ -7,6 +7,7 @@ import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import importPlugin from 'eslint-plugin-import';
+import eslintConfigPrettier from 'eslint-config-prettier';
 
 export default [
   {
@@ -76,4 +77,6 @@ export default [
       'import/no-unresolved': 'off',
     },
   },
+  // Disable formatting-related rules to avoid conflicts with Prettier
+  eslintConfigPrettier,
 ];
