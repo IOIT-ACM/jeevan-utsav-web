@@ -1,24 +1,25 @@
-import React from 'react';
+import { useEffect, type FC } from 'react';
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import Navbar from './components/Navbar';
+
 import Footer from './components/Footer';
-import Home from './pages/Home';
-import Philosophy from './pages/Philosophy';
+import Navbar from './components/Navbar';
 import Activities from './pages/Activities';
 import Contact from './pages/Contact';
+import Home from './pages/Home';
+import Philosophy from './pages/Philosophy';
 
 // Scroll to top on route change component
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
-  React.useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
   return null;
 };
 
-const App: React.FC = () => {
+const App: FC = () => {
   return (
     <Router>
       <ScrollToTop />

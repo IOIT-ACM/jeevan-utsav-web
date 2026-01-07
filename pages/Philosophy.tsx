@@ -34,13 +34,13 @@ const Philosophy: React.FC = () => {
 
           <h3 className="font-serif text-2xl font-semibold text-soil-brown mt-8 mb-4">Our Approach</h3>
           <p className="mb-6 leading-relaxed">
-            We don't just preach these values; we practice them. Our residential school is a laboratory for these ideas,
+            We don&apos;t just preach these values; we practice them. Our residential school is a laboratory for these ideas,
             where children learn not through fear or competition, but through curiosity and cooperation. Our farming
             practices respect the soil as a living entity, not just a resource to be exploited.
           </p>
 
           <blockquote className="border-l-4 border-forest-green pl-4 italic text-gray-600 my-8">
-            "The goal of human life is to resolve conflicts within oneself, in the family, in society, and with nature."
+            &quot;The goal of human life is to resolve conflicts within oneself, in the family, in society, and with nature.&quot;
           </blockquote>
 
           <p className="leading-relaxed">

@@ -1,5 +1,5 @@
-import React from 'react';
 import { MapPin, Mail, Phone, ExternalLink } from 'lucide-react';
+import React from 'react';
 
 const Contact: React.FC = () => {
   return (
@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="font-serif text-4xl font-bold text-gray-900">Visit Us</h1>
-          <p className="text-gray-600 mt-2">We'd love to show you around our campus.</p>
+          <p className="text-gray-600 mt-2">We&apos;d love to show you around our campus.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white rounded-2xl shadow-sm overflow-hidden">

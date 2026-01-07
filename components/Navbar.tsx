@@ -1,8 +1,9 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Leaf } from 'lucide-react';
+import type { FC } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+
 import { useUIStore } from '../store/useUIStore';
-import { NavItem } from '../types';
+import type { NavItem } from '../types';
 
 const navItems: NavItem[] = [
   { label: 'Home', path: '/' },
@@ -11,7 +12,7 @@ const navItems: NavItem[] = [
   { label: 'Contact', path: '/contact' },
 ];
 
-const Navbar: React.FC = () => {
+const Navbar: FC = () => {
   const { isMenuOpen, toggleMenu, closeMenu } = useUIStore();
   const location = useLocation();
 

@@ -1,7 +1,8 @@
-import React from 'react';
+import type { FC } from 'react';
+
 import { activities } from '../data/activities';
 
-const Activities: React.FC = () => {
+const Activities: FC = () => {
   return (
     <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
