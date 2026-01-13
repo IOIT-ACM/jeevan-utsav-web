@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
                 We value your input to help us grow and serve better.
               </p>
               <a
-                href="https://docs.google.com/forms"
+                href="https://forms.gle/JNM7VbNpaQRmcBj59"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-forest-green hover:bg-green-800 text-white px-5 py-2.5 rounded-lg font-medium transition-colors w-full sm:w-auto justify-center"
