@@ -66,7 +66,7 @@ const Home: FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="relative group overflow-hidden rounded-xl aspect-[4/3]">
               <img
-                src="https://picsum.photos/seed/farm/600/400"
+                src="/images/organic.jpg"
                 alt="Farming"
                 className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
               />
@@ -76,7 +76,7 @@ const Home: FC = () => {
             </div>
             <div className="relative group overflow-hidden rounded-xl aspect-[4/3]">
               <img
-                src="https://picsum.photos/seed/kids/600/400"
+                src="/images/edu.jpg"
                 alt="Education"
                 className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
               />
@@ -86,7 +86,7 @@ const Home: FC = () => {
             </div>
             <div className="relative group overflow-hidden rounded-xl aspect-[4/3]">
               <img
-                src="https://picsum.photos/seed/pottery/600/400"
+                src="/images/skill.jpg"
                 alt="Skills"
                 className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
               />
