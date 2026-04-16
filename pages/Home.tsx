@@ -49,7 +49,7 @@ const Home: FC = () => {
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
               <div className="flex-1">
                 <span className="bg-white text-soil-brown px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block">
-                  Upcoming Event
+                  Recent Event
                 </span>
                 <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">
                   Akshay Shrushti - Jeevan Drushti
