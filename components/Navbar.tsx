@@ -26,7 +26,6 @@ const Navbar: FC = () => {
     <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
           <Link to="/" className="flex items-center gap-2" onClick={closeMenu}>
             <div className="bg-forest-green p-1.5 rounded-lg">
               <Leaf className="h-6 w-6 text-white" />
@@ -36,7 +35,6 @@ const Navbar: FC = () => {
             </span>
           </Link>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
               <Link
@@ -48,16 +46,15 @@ const Navbar: FC = () => {
               </Link>
             ))}
             <a
-              href="https://docs.google.com/forms"
+              href="https://forms.gle/EQruEqFRhkiYA85z7"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-forest-green hover:bg-green-800 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
             >
-              Give Suggestions
+              Register for Camp
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleMenu}
@@ -70,7 +67,6 @@ const Navbar: FC = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Drawer */}
       {isMenuOpen && (
         <div className="md:hidden absolute top-16 left-0 w-full bg-white shadow-lg border-b border-gray-100 animate-in slide-in-from-top-2 duration-200">
           <div className="px-4 pt-2 pb-6 space-y-1">
@@ -89,13 +85,13 @@ const Navbar: FC = () => {
               </Link>
             ))}
             <a
-              href="https://docs.google.com/forms"
+              href="https://forms.gle/EQruEqFRhkiYA85z7"
               target="_blank"
               rel="noopener noreferrer"
               onClick={closeMenu}
               className="block w-full text-center mt-4 bg-forest-green text-white px-3 py-3 rounded-md text-base font-medium"
             >
-              Give Suggestions
+              Register for Camp
             </a>
           </div>
         </div>

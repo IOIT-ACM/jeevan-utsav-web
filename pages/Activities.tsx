@@ -39,11 +39,6 @@ const Activities: FC = () => {
                   {activity.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-6 flex-1">{activity.description}</p>
-                <div className="mt-auto pt-6 border-t border-gray-200">
-                  <span className="text-sm font-semibold text-forest-green cursor-pointer hover:underline">
-                    Learn more &rarr;
-                  </span>
-                </div>
               </div>
             </div>
           ))}
